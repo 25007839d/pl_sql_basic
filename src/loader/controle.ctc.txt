@@ -1,0 +1,7 @@
+load data
+infile infile "D:\Brainwork\sql\loader\data.csv"
+insert
+into table tar1
+fields terminated by ','
+(id_no,nam,age)
+   

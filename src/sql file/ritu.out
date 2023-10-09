@@ -1,0 +1,17 @@
+select name from t dno in(10,20,30)or job in('salesman','clerk','mnager');
+select name from t where name like 's%';
+select name from t where name like '%s';
+select name from t where name=5;
+select name from t where job not in('manager');
+select count(*) from emp;
+select max(salary)from t where job='sales';
+select name,(sal*12)as annul from t order by sal descending;
+select name,sal,sal/100*15 as punam,sal/100*10 as hra ,sal+sal/100*10,
+select dno,count(dnno)from group by dno;
+select name fro t where sal=(select max(sal)from t)
+
+select name from t where job='clerk',sal=(select max(sal)from t where job='clerk')
+select name from t where job='salesman',sal>(select max(sal)from t job='clerk')
+select name from t where job='sales, sal>(select min(sal)from t where job='salesman')
+select name,sal from t where sal>(select sal from t where name='scott')and sal>(select sal from t where name='jons);
+select * from t where sal=(select max(sal)from t)

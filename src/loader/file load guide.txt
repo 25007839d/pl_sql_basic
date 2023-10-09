@@ -1,0 +1,19 @@
+C:\Users\RITU>sqlldr userid-sys
+
+creating conrol file for variable flatfile
+
+# class
+load data
+infile'path of flat file available'
+insert/append/truncate/replace (# as per data)
+into table <table name>
+fields terminated by ','
+optionally enclosed by 'delimeters'
+trailing nullcols
+(col1,col2)
+
+# save this file by .ctl extention
+
+
+
+

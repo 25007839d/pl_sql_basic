@@ -1,0 +1,24 @@
+create table ritu (ritu_name varchar2(10),ritu_id number(8),ritu_rollno number(8));
+select * from ritu;
+
+alter table ritu add ritu_sno number(8);
+
+alter table ritu modify (ritu_name varchar2(8));
+
+alter table ritu add ritu_mobno number(10); 
+
+UPDATE RITU SET RITU_NAME = 'MONIKA' WHERE RITU_ID =100;
+
+UPDATE RITU SET RITU_ID = '120' WHERE RITU_NAME = 'MONAA';
+
+
+DELETE FROM RITU WHERE RITU_NAME = 'LUDHA';
+
+INSERT INTO RITU VALUES ('RADHA','100','300','486','1234567891');
+INSERT INTO RITU VALUES ('MONAA','170','600','496','1234567591');
+INSERT INTO RITU VALUES ('LUDHA','107','700','456','1234567391');
+INSERT INTO RITU VALUES ('MADHAV','190','300','483','1234567291'); 
+INSERT INTO RITU VALUES ('JUDHA','108','200','456','1234567871'); 
+INSERT INTO RITU VALUES ('KHUDHA','105','900','286','1234564891');
+INSERT INTO RITU VALUES ('MUDHA','104','800','436','1234567881');
+INSERT INTO RITU VALUES ('SUDHA','100','300','456','1234567843');

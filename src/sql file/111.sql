@@ -1,0 +1,6 @@
+SELECT * FROM VENDOR_TAB 
+SELECT * FROM CUSTOMER_TAB
+SELECT * FROM PURCHASE_TAB
+select * from ser_det_tab
+select *from sparepart_tab
+SELECT *FROM EMPLOYEE_TAB5

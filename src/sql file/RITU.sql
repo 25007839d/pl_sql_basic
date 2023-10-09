@@ -1,0 +1,63 @@
+create table logistic2(item_no number(10), item_name varchar2(30),item_quantity number(7),receiving_date date,receiving_time timestamp,
+peritem_cost float,total_ite_cost float,respected_department varchar2(30),department_code number(4),plant_code varchar2(4),
+receiver_name varchar2(30),receiver_token_no number(10),supplier_id varchar2(8));
+
+update logistic1 set receiver_name where eceiver_name varchar2(20);
+update logistic2 setreceiver_name where eceiver_name varchar2(30);
+
+
+select * from logistic2;
+
+insert into logistic2 values('102','bolt','1000',to_date('23.01.2022','dd-mm-yyyy'),to_date('04.12.21','hh24:mi:ss'),'8','8000','assembly',
+'0211','ma01','dushyant','123456262','suprio');
+insert into logistic2 values('102','bolt','1000',to_date('25.01.2022','dd-mm-yyyy'),to_date('17.12.21','hh24:mi:ss'),'8','8000','assembly',
+'0211','ma01','dushyant','123456262','suprio');
+
+--employee table
+
+CREATE TABLE EMP_2(SR_NO NUMBER(6),EMP_NAME  VARCHAR2(20),EMP_ID NUMBER(8),EMP_MOB NUMBER(10),EMP_DOB DATE,EMP_DOJ DATE,EMP_DEPT VARCHAR2(20),
+EMP_SALARY NUMBER(8));
+
+SELECT * FROM EMP_2;
+SELECT * FROM EMP;
+
+alter table emp_2 drop column emp_add;
+alter table emp_2 drop column emp_dept;
+
+
+
+
+
+ALTER TABLE EMP_2 ADD EMP_ADD VARCHAR2(30);
+
+INSERT INTO EMP_2 values(&SR_NO,&EMP_NAME,&EMP_ID, &EMP_MOB, ('EMP_DOB','DD-MM-YYYY'),('EMP_DOJ','DD-MM-YYYY'),&EMP_D
+
+INSERT INTO EMP_2 values(31,'RAHUL',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+INSERT INTO EMP_2 values(32,'SUBHAM',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+INSERT INTO EMP_2 values(33,'ROHIT',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+INSERT INTO EMP_2 values(34,'RAHUL_1',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'LOGISTIC',50000);
+INSERT INTO EMP_2 values(35,'BHARAT',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+INSERT INTO EMP_2 values(36,'AMOL',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'LOGISTIC',50000);
+INSERT INTO EMP_2 values(37,'SAMEER',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'LOGISTIC',50000);
+INSERT INTO EMP_2 values(38,'KRUSHNA',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+INSERT INTO EMP_2 values(39,'ASHISH',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'OPERATION',50000);
+INSERT INTO EMP_2 values(40,'PRINCE',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'OPERATION',50000);
+INSERT INTO EMP_2 values(41,'SONAM',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'PRODUCTION',50000);
+INSERT INTO EMP_2 values(42,'RASIA',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+INSERT INTO EMP_2 values(43,'RAHUL',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'PRODUCTION',50000);
+INSERT INTO EMP_2 values(44,'VAJID',100001,9650387298,TO_DATE('01.01.1990','DD-MM-YYYY'),TO_DATE(SYSDATE,'DD-MM-YYYY'),
+'ENGINE',50000);
+;
